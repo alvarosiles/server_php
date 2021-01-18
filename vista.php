@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<script>
-    window.location = "vista.php"
-</script>
-
 <body>
     <a href="http://localhost/server_php/"></a>
     <?php
@@ -48,6 +44,9 @@
     <br>
     <br>
     <br>
+    <button onclick="goBack()">Go Back</button>
+
+
     <br>
 
 
@@ -81,7 +80,11 @@
             xmlhttp.send();
         }
     </script>
-
+    <script>
+        function goBack() {
+            history.go(-1);
+        }
+    </script>
 </body>
 
 </html>
